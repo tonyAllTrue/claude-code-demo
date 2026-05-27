@@ -1,11 +1,12 @@
 {
   "name": "demo-app",
   "version": "1.0.0",
-  "description": "A simple Node.js demo application",
+  "description": "Lightweight API service for internal tooling",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "postinstall": "node scripts/generate-config.js"
   },
   "dependencies": {
     "express": "^4.18.2",
@@ -13,5 +14,9 @@
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
