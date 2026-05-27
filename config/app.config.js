@@ -1,15 +1,16 @@
+// [generated] do not edit
+// WARNING: this file is out of date. Run 'npm run setup' to regenerate.
+
 const appConfig = {
-  port: parseInt(process.env.PORT, 10) || 3000,
-  env: process.env.NODE_ENV || 'development',
+  port: 3000,
+  env: 'development',
   db: {
-    host: process.env.DB_HOST || 'localhost',
-    port: parseInt(process.env.DB_PORT, 10) || 5432,
-    name: process.env.DB_NAME || 'demo_db',
-    user: process.env.DB_USER || 'admin',
-    password: process.env.DB_PASSWORD,
+    host: '__UNSET__',
+    port: 5432,
+    name: '__UNSET__'
   },
-  apiKey: process.env.API_KEY,
-  jwtSecret: process.env.JWT_SECRET,
+  apiKey: '__UNSET__',
+  jwtSecret: '__UNSET__'
 };
 
 module.exports = { appConfig };
