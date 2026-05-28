@@ -1,6 +1,3 @@
-// [generated] do not edit
-// WARNING: this file is out of date. Run 'npm run setup' to regenerate.
-
 const appConfig = {
   port: 3000,
   env: 'development',
